@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Abdulkadir | Software Engineer</title>
+    
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-blue: #2E3192;
+            --dark-blue: #1c1e5a;
+            --text-dark: #1f2937;
+            --text-gray: #6b7280;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+            --border-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            padding-bottom: 40px; 
+        }
+
+        /* --- Header / Hero Section --- */
+        header {
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.3);
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #dbeafe;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Bar */
+        .contact-bar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .contact-bar a {
+            color: var(--white);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50px;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-bar a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        /* --- Content Sections --- */
+        section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 2rem;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+            display: block;
+            width: 100%;
+        }
+
+        /* --- Summary --- */
+        .summary-text {
+            font-size: 1.1rem;
+            color: #374151;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* --- Experience Cards --- */
+        .experience-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--primary-blue);
+            transition: transform 0.2s ease;
+        }
+
+        .experience-card:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            gap: 10px;
+        }
+
+        .exp-title h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .company-name {
+            font-weight: 600;
+            color: var(--primary-blue);
+            font-size: 1rem;
+        }
+
+        .exp-date {
+            font-size: 0.85rem;
+            color: var(--primary-blue);
+            background: #eff6ff;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            white-space: nowrap; 
+        }
+
+        .exp-details ul {
+            list-style-position: outside;
+            margin-left: 1.2rem;
+            color: #4b5563;
+            font-size: 1rem;
+        }
+
+        .exp-details li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* --- Skills Grid --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .skill-category h4 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #f9fafb;
+            color: #374151;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px solid #e5e7eb;
+            font-weight: 500;
+        }
+
+        /* --- Education & Certs --- */
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .edu-item {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+
+        .cert-list {
+            margin-top: 15px;
+        }
+
+        .cert-list li {
+            margin-bottom: 0.8rem;
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+
+        .cert-list i {
+            color: #10b981; /* Green check */
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: var(--dark-blue);
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        /* =========================================
+           MOBILE OPTIMIZATION
+           ========================================= */
+        
+        @media (max-width: 768px) {
+            header { padding: 3rem 1.5rem; }
+            h1 { font-size: 2rem; }
+            .edu-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+        }
+
+        @media (max-width: 600px) {
+            header { padding: 2.5rem 1rem; }
+            h1 { font-size: 1.75rem; }
+            .subtitle { font-size: 1rem; }
+            .profile-img { width: 120px; height: 120px; }
+
+            .contact-bar {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+            .contact-bar a { width: 100%; }
+
+            .exp-header { flex-direction: column; }
+            .exp-date {
+                align-self: flex-start;
+                margin-top: 5px;
+                font-size: 0.8rem;
+            }
+
+            .container { padding: 0 15px; }
+            .experience-card, .edu-item, .skill-category { padding: 1.5rem; }
+            .summary-text { font-size: 1rem; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="images/image.png" alt="Adam Abdulkadir" class="profile-img">
+            
+            [span_0](start_span)<h1>Adam Abdulkadir[span_0](end_span)</h1>
+            <p class="subtitle">Software Engineer | [span_1](start_span)Java & Spring Boot Specialist[span_1](end_span)</p>
+            
+            <div class="contact-bar">
+                <a href="mailto:adama1862@outlook.com">
+                    [span_2](start_span)<i class="fas fa-envelope"></i> adama1862@outlook.com[span_2](end_span)
+                </a>
+                <a href="https://www.linkedin.com/in/adam-abdulkadir/" target="_blank">
+                    [span_3](start_span)<i class="fab fa-linkedin"></i> LinkedIn[span_3](end_span)
+                </a>
+                 <a href="https://github.com/aabdulk862" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary-text">
+                Software Engineer with hands-on experience building backend services using Java and Spring Boot, supporting high-volume, distributed systems. My background spans enterprise platforms, full-stack development, and modern frontend frameworks including Angular and React. [span_4](start_span)Comfortable working across APIs, databases, and messaging workflows in agile environments.[span_4](end_span)
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4><i class="fas fa-server"></i> Backend</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Java 21</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Spring Batch</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">RabbitMQ</span>
+                        <span class="tag">RESTful APIs</span>
+                        <span class="tag">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+                    <div class="skill-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+                    <div class="skill-tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <section>
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-title">
+                        <h3>Software Engineer Associate</h3>
+                        [span_5](start_span)<div class="company-name">Infosys (Client: Charter Communications)[span_5](end_span)</div>
+                    </div>
+                    [span_6](start_span)<div class="exp-date">Mar 2025 - Present[span_6](end_span)</div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        [span_7](start_span)<li>Contributed to UCC Hub, a large-scale customer communications platform processing millions of records via Email, SMS, and IVR.[span_7](end_span)</li>
+                        [span_8](start_span)<li>Owned the service separation of Appointment Service, refactoring logic into a standalone Spring Boot microservice using RabbitMQ.[span_8](end_span)</li>
+                        [span_9](start_span)<li>Designed service-to-service integration with Ingestion API using Java 21 and Rest Template.[span_9](end_span)</li>
+                        [span_10](start_span)<li>Refactored legacy code by removing unused Kafka and S3 components, significantly reducing technical debt.[span_10](end_span)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-title">
+                        <h3>Full Stack Developer</h3>
+                        [span_11](start_span)<div class="company-name">Revature[span_11](end_span)</div>
+                    </div>
+                    [span_12](start_span)<div class="exp-date">Jun 2024 - Mar 2025[span_12](end_span)</div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        [span_13](start_span)<li>Built a full-stack Employee Reimbursement System (ERS) using Spring Boot, React, and PostgreSQL.[span_13](end_span)</li>
+                        [span_14](start_span)<li>Implemented role-based access control (RBAC), secure authentication, and complex approval workflows.[span_14](end_span)</li>
+                        [span_15](start_span)<li>Deployed applications using CI/CD pipelines with Docker and Jenkins.[span_15](end_span)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-title">
+                        <h3>Web Developer / Technical Lead</h3>
+                        [span_16](start_span)<div class="company-name">GAMEC (Nonprofit)[span_16](end_span)</div>
+                    </div>
+                    [span_17](start_span)<div class="exp-date">Aug 2023 - Jun 2024[span_17](end_span)</div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        [span_18](start_span)<li>Spearheaded the design and development of the official website for the Global Association of Muslim Eritrean Communities.[span_18](end_span)</li>
+                        [span_19](start_span)<li>Managed website updates, maintenance, and security troubleshooting.[span_19](end_span)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div class="exp-title">
+                        <h3>Frontend Developer</h3>
+                        [span_20](start_span)<div class="company-name">Crocodile Solutions[span_20](end_span)</div>
+                    </div>
+                    [span_21](start_span)<div class="exp-date">Apr 2023 - Jul 2023[span_21](end_span)</div>
+                </div>
+                <div class="exp-details">
+                    <ul>
+                        [span_22](start_span)<li>Modernized legacy applications into React and Next.js single-page applications (SPAs).[span_22](end_span)</li>
+                        [span_23](start_span)<li>Collaborated closely with backend engineers to align frontend components with REST API contracts.[span_23](end_span)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="edu-grid">
+                
+                <div class="edu-item">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    [span_24](start_span)<p style="font-weight: 600; margin-top: 10px; font-size: 1.1rem; color: #2E3192;">George Mason University[span_24](end_span)</p>
+                    [span_25](start_span)<p>B.S. in Information Technology[span_25](end_span)</p>
+                    [span_26](start_span)<p style="font-size: 0.9rem; color: #666; margin-top: 5px;">Minor in Business[span_26](end_span)</p>
+                </div>
+
+                <div class="edu-item">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <ul class="cert-list">
+                        [span_27](start_span)<li><i class="fas fa-check-circle"></i> AWS Certified Solutions Architect - Associate[span_27](end_span)</li>
+                        [span_28](start_span)<li><i class="fas fa-check-circle"></i> Microsoft Azure Fundamentals[span_28](end_span)</li>
+                        [span_29](start_span)<li><i class="fas fa-check-circle"></i> CompTIA Security+[span_29](end_span)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Adam Abdulkadir. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
