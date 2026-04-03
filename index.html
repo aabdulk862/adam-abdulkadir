@@ -1,396 +1,219 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adam Abdulkadir | Software Engineer</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="images/favicon.png" type="image/png" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      :root {
-        --primary: #2e3192;
-        --dark: #1c1e5a;
-        --bg: #f3f4f6;
-        --white: #ffffff;
-        --text: #1f2937;
-        --muted: #6b7280;
-        --radius: 12px;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-      }
-
-      header {
-        background: linear-gradient(135deg, var(--dark), var(--primary));
-        color: white;
-        text-align: center;
-        padding: 4rem 1.5rem;
-      }
-
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-      }
-      .subtitle {
-        color: #dbeafe;
-        margin-top: 0.5rem;
-      }
-
-      .contact {
-        margin-top: 1.5rem;
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-wrap: wrap;
-      }
-
-      .contact a {
-        color: white;
-        text-decoration: none;
-        padding: 8px 16px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.15);
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 0.9rem;
-      }
-
-      .contact a:last-child {
-        background: rgba(255, 255, 255, 0.25);
-        font-weight: 600;
-      }
-
-      section {
-        padding: 3rem 0;
-      }
-
-      .section-title {
-        font-size: 1.4rem;
-        color: var(--primary);
-        margin-bottom: 1.5rem;
-        border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 0.5rem;
-      }
-
-      .summary {
-        max-width: 800px;
-        margin: 0 auto;
-        text-align: center;
-        color: #374151;
-      }
-
-      .card {
-        background: var(--white);
-        border-radius: var(--radius);
-        padding: 1.75rem;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-        border-left: 4px solid var(--primary);
-      }
-
-      .card-header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .company {
-        font-weight: 600;
-        color: var(--primary);
-      }
-
-      .date {
-        font-size: 0.85rem;
-        background: #eff6ff;
-        color: var(--primary);
-        padding: 4px 10px;
-        border-radius: 6px;
-        font-weight: 600;
-      }
-
-      ul {
-        margin-top: 1rem;
-        margin-left: 1.2rem;
-        color: #4b5563;
-      }
-
-      li {
-        margin-bottom: 0.6rem;
-      }
-
-      .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-      }
-
-      .skill-box {
-        background: white;
-        padding: 1.5rem;
-        border-radius: var(--radius);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      }
-
-      .skill-box h4 {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: var(--primary);
-        margin-bottom: 0.75rem;
-      }
-
-      .tags span {
-        display: inline-block;
-        background: #f9fafb;
-        border: 1px solid #e5e7eb;
-        padding: 6px 10px;
-        border-radius: 6px;
-        font-size: 0.85rem;
-        margin: 4px;
-      }
-
-      footer {
-        background: var(--dark);
-        color: rgba(255, 255, 255, 0.7);
-        text-align: center;
-        padding: 2rem;
-        font-size: 0.85rem;
-      }
-
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 2rem;
-        }
-        .summary {
-          text-align: left;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Adam Abdulkadir</h1>
-      <p class="subtitle">Software Engineer</p>
-
-      <div class="contact">
-        <a href="mailto:adama1862@outlook.com">
-          <i class="fa-solid fa-envelope"></i> Email
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adam Abdulkadir | Software Engineer</title>
+  <link rel="icon" href="images/favicon.ico?v=4" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png?v=4" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Hero -->
+    <div class="hero">
+      <span class="hero-eyebrow"><i class="fas fa-circle" style="font-size:0.4rem"></i> Charlotte, NC</span>
+      <h1>Adam <span class="hero-accent">Abdulkadir</span></h1>
+      <p class="hero-sub">
+        Software Engineer with experience building and supporting high-volume distributed backend systems
+        using Java and Spring Boot. Skilled in microservices, REST APIs, messaging systems (RabbitMQ, Kafka),
+        full-stack development, and CI/CD on AWS and Azure. Contributing to enterprise platforms
+        processing millions of messages daily.
+      </p>
+      <div class="hero-ctas">
+        <a href="mailto:adama1862@outlook.com" class="btn btn--primary">
+          <i class="fas fa-envelope"></i> Email Me
         </a>
-
-        <a href="https://linkedin.com/in/adam-abdulkadir" target="_blank">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        <a href="https://linkedin.com/in/adam-abdulkadir" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+          <i class="fab fa-linkedin"></i> LinkedIn
         </a>
-
-        <a href="https://github.com/aabdulk862" target="_blank">
-          <i class="fa-brands fa-github"></i> GitHub
+        <a href="https://github.com/aabdulk862" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+          <i class="fab fa-github"></i> GitHub
         </a>
-
-        <a href="files/adam_abdulkadir_resume.pdf" target="_blank">
-          <i class="fa-solid fa-file-lines"></i> Resume
+        <a href="files/adam-abdulkadir-resume.pdf" target="_blank" class="btn btn--ghost">
+          <i class="fas fa-file-lines"></i> Resume
         </a>
       </div>
-    </header>
-
-    <div class="container">
-      <section>
-        <h2 class="section-title">Summary</h2>
-        <p class="summary">
-          Software Engineer with hands-on experience building backend services
-          using Java and Spring Boot, supporting high-volume distributed
-          systems. Background spans enterprise platforms, full-stack
-          development, and modern frontend frameworks. Comfortable across APIs,
-          databases, and messaging workflows in agile environments.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="section-title">Life Outside Work</h2>
-        <p class="summary">
-          Based in Charlotte, NC, I enjoy exploring both the digital and real world. When I’m not coding, you’ll find me hiking trails, staying active in fitness, experimenting in the kitchen, diving into movies, or catching the latest episodes of <strong>One Piece</strong>. I also love gaming as a way to unwind and challenge myself.
-        </p>
-      </section>
-
-      <section>
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-grid">
-          <div class="skill-box">
-            <h4><i class="fa-solid fa-server"></i> Backend</h4>
-            <div class="tags">
-              <span>Java</span>
-              <span>Spring Boot</span>
-              <span>Kafka</span>
-              <span>RabbitMQ</span>
-            </div>
-          </div>
-
-          <div class="skill-box">
-            <h4><i class="fa-solid fa-laptop-code"></i> Frontend</h4>
-            <div class="tags">
-              <span>React</span>
-              <span>Angular</span>
-              <span>Next.js</span>
-              <span>TypeScript</span>
-            </div>
-          </div>
-
-          <div class="skill-box">
-            <h4><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h4>
-            <div class="tags">
-              <span>AWS</span>
-              <span>Azure</span>
-              <span>Docker</span>
-              <span>Kubernetes</span>
-            </div>
-          </div>
-
-          <div class="skill-box">
-            <h4><i class="fa-solid fa-briefcase"></i> Business</h4>
-            <div class="tags">
-              <span>Project Management</span>
-              <span>Agile Methodology</span>
-              <span>Data Visualization</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">How I Work</h2>
-        <div class="skills-grid">
-          <div class="skill-box">
-            <h4><i class="fa-solid fa-lightbulb"></i> Problem Solving</h4>
-            <p>
-              Analyze requirements, break down complex problems, and design
-              efficient solutions.
-            </p>
-          </div>
-          <div class="skill-box">
-            <h4><i class="fa-solid fa-users"></i> Collaboration</h4>
-            <p>
-              Work closely with cross-functional teams, ensuring smooth
-              integration and knowledge sharing.
-            </p>
-          </div>
-          <div class="skill-box">
-            <h4><i class="fa-solid fa-rocket"></i> Delivery & Execution</h4>
-            <p>
-              Build and deploy scalable solutions, following best practices in
-              code quality and CI/CD pipelines.
-            </p>
-          </div>
-          <div class="skill-box">
-            <h4><i class="fa-solid fa-gears"></i> Continuous Learning</h4>
-            <p>
-              Quickly adapt to new technologies, frameworks, and architectures
-              to stay ahead.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Experience</h2>
-
-        <div class="card">
-          <div class="card-header">
-            <div>
-              <strong>Software Engineer Associate</strong><br />
-              <span class="company"
-                >Infosys — Client: Charter Communications</span
-              >
-            </div>
-            <span class="date">Mar 2025 – Present</span>
-          </div>
-          <ul>
-            <li>
-              Delivered service separation of Appointment Service into a
-              standalone Spring Boot microservice integrated via REST and
-              RabbitMQ.
-            </li>
-            <li>
-              Designed service-to-service integrations using Java 21,
-              RestTemplate processors, and contract-driven validation.
-            </li>
-            <li>
-              Led architectural analysis for Tech Tracker and Glympse
-              integrations and documented migration strategies.
-            </li>
-            <li>
-              Reduced technical debt by removing unused Kafka, S3, batch, and
-              file-processing components.
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div>
-              <strong>Full Stack Developer</strong><br />
-              <span class="company">Revature</span>
-            </div>
-            <span class="date">Jun 2024 – Mar 2025</span>
-          </div>
-          <ul>
-            <li>
-              Built a full-stack Employee Reimbursement System using Spring
-              Boot, React, and PostgreSQL.
-            </li>
-            <li>
-              Implemented RBAC, secure authentication, and approval workflows.
-            </li>
-            <li>
-              Deployed applications via Docker-based CI/CD pipelines with
-              Jenkins.
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Education & Certifications</h2>
-
-        <div class="card">
-          <strong>George Mason University</strong><br />
-          B.S. in Information Technology — Minor in Business
-        </div>
-
-        <div class="card">
-          <ul>
-            <li>AWS Certified Solutions Architect – Associate</li>
-            <li>Microsoft Azure Fundamentals</li>
-            <li>CompTIA Security+</li>
-          </ul>
-        </div>
-      </section>
+      <div class="hero-caps">
+        <span class="hero-cap"><i class="fas fa-server"></i> Backend</span>
+        <span class="hero-cap"><i class="fas fa-laptop-code"></i> Frontend</span>
+        <span class="hero-cap"><i class="fas fa-cloud"></i> Cloud</span>
+        <span class="hero-cap"><i class="fas fa-cubes"></i> Microservices</span>
+      </div>
     </div>
 
+    <!-- Experience -->
+    <div class="section">
+      <div class="section-title">Experience</div>
+      <div class="timeline">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Software Engineer Associate</div>
+              <div class="exp-company">Infosys — Client: Charter Communications / Spectrum</div>
+            </div>
+            <span class="exp-date">Mar 2025 – Present</span>
+          </div>
+          <ul>
+            <li>Contributing to UCC Hub, a large-scale customer communications platform processing millions of records per run across Email, SMS, RCS, and IVR channels using Java 21, Spring Boot, and a microservices architecture.</li>
+            <li>Built and delivered Appointment Service as a standalone Spring Boot microservice, extracting tightly coupled logic from a monolith into a service handling technician dispatch, live GPS tracking, and appointment lifecycle management via REST APIs and RabbitMQ.</li>
+            <li>Identified and resolved a production data access bug where a new channel introduction caused multi-row query conflicts, delivering a zero-downtime SQL fix validated against live production data.</li>
+            <li>Remediated critical security vulnerabilities (Log4Shell CVE-2021-44228 and CVE-2022-22963) across 14 services by rebuilding Docker images, coordinating multi-environment deployments, and verifying fixes through Qualys scans.</li>
+            <li>Reduced technical debt by removing unused Kafka, S3, file-processing, and batch components, streamlining service scope and improving application startup performance.</li>
+            <li>Migrated legacy Spring @Value properties to structured YAML configuration with type-safe validation, integrating Spring Cloud Config and Kubernetes ConfigMaps across multiple environments.</li>
+            <li>Wrote test documentation and SQL test scripts covering 6+ integration flows with database verification, log analysis, and edge case coverage; presented service demo to Director of Software Development.</li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Full Stack Developer</div>
+              <div class="exp-company">Revature</div>
+            </div>
+            <span class="exp-date">Jun 2024 – Mar 2025</span>
+          </div>
+          <ul>
+            <li>Built full-stack Employee Reimbursement System using Spring Boot, React, PostgreSQL, and REST APIs with role-based access control (RBAC), secure authentication, and approval workflows.</li>
+            <li>Designed and maintained backend APIs; integrated frontend components with backend services.</li>
+            <li>Built and deployed applications via Docker/Jenkins CI/CD pipelines.</li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Web Developer / Technical Lead</div>
+              <div class="exp-company">Global Association of Muslim Eritrean Communities (GAMEC)</div>
+            </div>
+            <span class="exp-date">Aug 2023 – Jun 2024</span>
+          </div>
+          <ul>
+            <li>Designed and developed official nonprofit website using HTML, CSS, JavaScript, Figma, and Netlify, improving user engagement and accessibility.</li>
+            <li>Managed ongoing updates, maintenance, and troubleshooting to ensure consistent performance and security.</li>
+            <li>Researched emerging web technologies and recommended solutions to improve the organization's online presence.</li>
+          </ul>
+        </div>
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-title">Frontend Developer</div>
+              <div class="exp-company">Crocodile Solutions</div>
+            </div>
+            <span class="exp-date">Apr 2023 – Jul 2023</span>
+          </div>
+          <ul>
+            <li>Modernized legacy applications into responsive React and Next.js single-page applications, improving UI performance and user experience.</li>
+            <li>Built performance-focused UIs using HTML, CSS, JavaScript, and Material UI; integrated with backend REST APIs.</li>
+            <li>Collaborated with backend engineers to align frontend-backend contracts and minimize integration issues.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+      <div class="section-title">Projects</div>
+      <div id="projects-grid"></div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h4><i class="fas fa-server"></i> Backend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Java 21</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Spring Batch</span>
+            <span class="skill-tag">Spring Cloud</span>
+            <span class="skill-tag">JDBC</span>
+            <span class="skill-tag">Kafka</span>
+            <span class="skill-tag">RabbitMQ</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Angular</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Material UI</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h4><i class="fas fa-database"></i> Databases</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MariaDB</span>
+            <span class="skill-tag">Oracle SQL</span>
+            <span class="skill-tag">SQL Server</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Kubernetes</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">GitLab CI</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h4><i class="fas fa-wrench"></i> Tools</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Gradle</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Splunk</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Tableau</span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h4><i class="fas fa-diagram-project"></i> Methodologies</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">Event-Driven Architecture</span>
+            <span class="skill-tag">RESTful API Design</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">Scrum</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education & Certifications -->
+    <div class="section">
+      <div class="section-title">Education & Certifications</div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <strong>George Mason University</strong>
+          <span>B.S. in Information Technology — Minor in Business</span>
+          <span class="edu-meta">Fairfax, VA · Aug 2017 – Dec 2023</span>
+        </div>
+        <div class="edu-card">
+          <ul class="cert-list">
+            <li><i class="fas fa-certificate"></i> AWS Certified Solutions Architect – Associate <span class="cert-date">Aug 2023</span></li>
+            <li><i class="fas fa-certificate"></i> Microsoft Azure Fundamentals <span class="cert-date">Oct 2024</span></li>
+            <li><i class="fas fa-certificate"></i> CompTIA Security+ <span class="cert-date">Jan 2023</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <footer>© 2026 Adam Abdulkadir</footer>
-  </body>
+  </div>
+  <script src="js/projects.js"></script>
+</body>
 </html>
