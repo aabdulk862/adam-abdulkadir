@@ -471,6 +471,7 @@ footer {
 /* === Responsive === */
 @media (max-width: 900px) {
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .projects-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 600px) {
@@ -491,9 +492,32 @@ footer {
   .hero-cap { font-size: 0.75rem; }
 
   .section { margin-bottom: 32px; }
-  .skills-grid { grid-template-columns: 1fr; }
-  .projects-grid { grid-template-columns: 1fr; }
 
+  .skills-grid { grid-template-columns: 1fr; }
+  .skill-box { padding: 16px; }
+
+  .exp-card { padding: 16px; }
   .exp-header { flex-direction: column; }
   .exp-date { align-self: flex-start; }
+  .exp-card li {
+    font-size: 0.8rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-group { margin-bottom: 24px; }
+  .project-thumb { height: 100px; }
+
+  .cert-list li {
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  .cert-date {
+    margin-left: 0;
+    width: 100%;
+    padding-left: 23px;
+  }
+
+  footer { padding: 24px 16px; }
 }
